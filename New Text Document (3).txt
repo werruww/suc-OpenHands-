@@ -1,0 +1,294 @@
+sudo docker run -it --privileged --rm --pull=always \
+--network host \
+-e LLM_API_KEY="ollama" \
+-e LLM_BASE_URL="http://127.0.0.1:11434" \
+-e LLM_OLLAMA_BASE_URL="http://127.0.0.1:11434" \
+-e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.12-nikolaik \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-p 3000:3000 \
+--add-host host.docker.internal:host-gateway \
+--name openhands-app \
+docker.all-hands.dev/all-hands-ai/openhands:0.12
+
+
+
+
+
+
+
+docker run -it --privileged --rm \
+  -e LLM_API_KEY="ollama" \
+  -e OLLAMA_HOST="http://172.21.151.42:11434" \
+  -e LLM_OLLAMA_BASE_URL="http://172.21.151.42:11434" \
+  -e OLLAMA_BASE_URL="http://172.21.151.42:11434" \
+  -e OLLAMA_URL="http://172.21.151.42:11434" \
+  -e SANDBOX_RUNTIME_CONTAINER_IMAGE="docker.all-hands.dev/all-hands-ai/runtime:0.12-nikolaik" \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -p 3000:3000 \
+  --name openhands-app \
+  docker.all-hands.dev/all-hands-ai/openhands:0.12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sudo docker run -it --privileged --rm --pull=always \
+  --network host \
+  -e UVICORN_HOST=0.0.0.0 \
+  -e UVICORN_PORT=3000 \
+  -e LLM_API_KEY="ollama" \
+  -e LLM_BASE_URL="http://127.0.0.1:11434" \
+  -e LLM_OLLAMA_BASE_URL="http://127.0.0.1:11434" \
+  -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.12-nikolaik \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -p http://127.0.0.1:3000:3000 \
+  --add-host host.docker.internal:host-gateway \
+  --name openhands-app \
+  docker.all-hands.dev/all-hands-ai/openhands:0.12
+
+
+sudo docker run -it --privileged --rm \
+  -e LLM_API_KEY="ollama" \
+  -e OLLAMA_HOST="http://host.docker.internal:11434" \
+  -e LLM_OLLAMA_BASE_URL="http://host.docker.internal:11434" \
+  -e OLLAMA_BASE_URL="http://host.docker.internal:11434" \
+  -e OLLAMA_URL="http://host.docker.internal:11434" \
+  -e SANDBOX_RUNTIME_CONTAINER_IMAGE="docker.all-hands.dev/all-hands-ai/runtime:0.12-nikolaik" \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -p 3000:3000 \
+  --add-host host.docker.internal:host-gateway \
+  --name openhands-app \
+  docker.all-hands.dev/all-hands-ai/openhands:0.12
+
+
+
+sudo docker run -it --privileged --rm --pull=always \
+  -e LLM_API_KEY="ollama" \
+  -e LLM_BASE_URL="http://172.21.151.42:11434" \
+  -e LLM_OLLAMA_BASE_URL="http://172.21.151.42:11434" \
+  -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.12-nikolaik \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -p 3000:3000 \
+  --add-host host.docker.internal:host-gateway \
+  --name openhands-app \
+  docker.all-hands.dev/all-hands-ai/openhands:0.12
+
+
+
+
+
+
+
+
+
+
+
+docker run -it --rm \
+  -e OLLAMA_HOST="http://host.docker.internal:11434" \
+  -e LLM_OLLAMA_BASE_URL="http://host.docker.internal:11434" \
+  -e OLLAMA_BASE_URL="http://host.docker.internal:11434" \
+  -e OLLAMA_URL="http://host.docker.internal:11434" \
+  -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.12-nikolaik \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -p 3000:3000 \
+  --add-host host.docker.internal:host-gateway \
+  --name openhands-app \
+  docker.all-hands.dev/all-hands-ai/openhands:0.12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-e OLLAMA_HOST="http://host.docker.internal:11434"
+-e LLM_OLLAMA_BASE_URL="http://host.docker.internal:11434"
+-e OLLAMA_BASE_URL="http://host.docker.internal:11434"
+-e OLLAMA_URL="http://host.docker.internal:11434"
+
+
+
+sudo docker run -it --privileged --rm --pull=always \
+  -e LLM_API_KEY="ollama" \
+  -e OLLAMA_HOST="http://host.docker.internal:11434"
+  -e LLM_OLLAMA_BASE_URL="http://host.docker.internal:11434"
+  -e OLLAMA_BASE_URL="http://host.docker.internal:11434"
+  -e OLLAMA_URL="http://host.docker.internal:11434"
+  -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.12-nikolaik \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -p 3000:3000 \
+  --add-host host.docker.internal:host-gateway \
+  --name openhands-app \
+  docker.all-hands.dev/all-hands-ai/openhands:0.12
+
+
+
+
+
+sudo docker run -it --privileged --rm --pull=always \
+  -e LLM_API_KEY="ollama" \
+  -e LLM_BASE_URL="http://host.docker.internal:11434" \
+  -e LLM_OLLAMA_BASE_URL="http://host.docker.internal:11434" \
+  -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.12-nikolaik \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -p 3000:3000 \
+  --add-host host.docker.internal:host-gateway \
+  --name openhands-app \
+  docker.all-hands.dev/all-hands-ai/openhands:0.12
+
+
+http://172.21.151.42:11434
+
+
+
+sudo chmod 666 /var/run/docker.sock
+
+
+docker pull docker.all-hands.dev/all-hands-ai/runtime:0.39-nikolaik
+
+
+
+
+
+sudo docker run -it --privileged --rm --pull=always \
+--network host \
+-e LLM_API_KEY="ollama" \
+-e LLM_BASE_URL="http://127.0.0.1:11434" \
+-e LLM_OLLAMA_BASE_URL="http://127.0.0.1:11434" \
+-e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.39-nikolaik \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-p 3000:3000 \
+--add-host host.docker.internal:host-gateway \
+--name openhands-app \
+docker.all-hands.dev/all-hands-ai/openhands:0.39
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker pull docker.all-hands.dev/all-hands-ai/runtime:0.39-nikolaik
+
+docker run -it --rm --pull=always \
+    -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.39-nikolaik \
+    -e LOG_ALL_EVENTS=true \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v ~/.openhands-state:/.openhands-state \
+    -p 3000:3000 \
+    --add-host host.docker.internal:host-gateway \
+    --name openhands-app \
+    docker.all-hands.dev/all-hands-ai/openhands:0.39
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# إذا كان لديك GPU:
+docker run -d --gpus=all -v ollama_data:/root/.ollama -p 11434:11434 --name ollama-server ollama/ollama
+# إذا لم يكن لديك GPU:
+# docker run -d -v ollama_data:/root/.ollama -p 11434:11434 --name ollama-server ollama/ollama
+
+# وتأكد من سحب النموذج الذي ستستخدمه:
+docker exec -it ollama-server ollama pull llama3.2:1b
+
+
+
+
+
+
+docker run -d -v ollama_data:/root/.ollama -p 11434:11434 --name ollama-server ollama/ollama
+docker exec -it ollama-server ollama pull llama3.2:1b
+
+
+
+
+
+
+docker run -it --rm --pull=always \
+    -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.39-nikolaik \
+    -e LOG_ALL_EVENTS=true \
+    -e OLLAMA_BASE_URL=http://host.docker.internal:11434 \
+    -e LLM_MODEL=ollama/llama3.2:1b \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v ~/.openhands-state:/.openhands-state \
+    -p 3000:3000 \
+    --add-host host.docker.internal:host-gateway \
+    --name openhands-app \
+    docker.all-hands.dev/all-hands-ai/openhands:0.39
+
+
+
+
+
+sudo chmod 666 /var/run/docker.sock
+
+
+docker pull docker.all-hands.dev/all-hands-ai/runtime:0.39-nikolaik
+
+
+
+
+
+docker run -it --rm --pull=always \
+    -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.39-nikolaik \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v ~/.openhands-state:/.openhands-state \
+    -p 3000:3000 \
+    --add-host host.docker.internal:host-gateway \
+    --name openhands-app \
+    docker.all-hands.dev/all-hands-ai/openhands:0.39
